@@ -5,7 +5,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
-SLACK_URL = "https://slack.com/api/chat.postMessage"
+#SLACK_URL = "https://slack.com/api/chat.postMessage"
 HEADER = {
         "Authorization": "Bearer xoxp-120107970803-391446038516-421206825986-d1b6b3b474bdcaf2762833221a3c899d"
 }
@@ -38,13 +38,13 @@ def isSomeoneBirthday():
 
 @sched.scheduled_job('cron', day_of_week='mon-fri', hour=19)
 def scheduled_job():
-    print('This job is run every weekday at 5pm.')
+    print('This job is run every weekday at 19pm.')
     isSomeoneBirthday()
 
 
 @sched.scheduled_job('interval', minutes=1)
 def timed_job():
-    print('This job is run every three minutes.')
+    print('This job is run every one minute.')
     isSomeoneBirthday()
 
 sched.start()
