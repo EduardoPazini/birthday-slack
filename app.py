@@ -6,7 +6,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 SLACK_URL = "https://slack.com/api/chat.postMessage"
 HEADER = {
-        "Authorization": "Bearer xoxp-120107970803-391446038516-421372942080-5da47da3a5fc742ed296bf0541d0b9fe"
+        "Authorization": "Bearer xoxp-120107970803-391446038516-421206825986-d1b6b3b474bdcaf2762833221a3c899d"
 }
 BIRTHS = {
     "Murilo": "8/15/1999",
