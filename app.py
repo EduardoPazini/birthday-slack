@@ -3,6 +3,7 @@ from requests import post
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
+sched = BlockingScheduler()
 
 SLACK_URL = "https://slack.com/api/chat.postMessage"
 HEADER = {
