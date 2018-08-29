@@ -11,7 +11,7 @@ HEADER = {
 }
 BIRTHS = {
     "Murilo": "8/15/1999",
-    "Carlos": "8/23/2018",
+    "Carlos": "8/29/2018",
     "Daniel": "2/2/2018"
 }
 
@@ -45,6 +45,6 @@ def scheduled_job():
 @sched.scheduled_job('interval', minutes=1)
 def timed_job():
     print('This job is run every three minutes.')
-
+    isSomeoneBirthday()
 
 sched.start()
