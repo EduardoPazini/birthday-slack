@@ -1,5 +1,6 @@
 from datetime import datetime
 from requests import post
+#import birthday_register
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
@@ -7,7 +8,7 @@ sched = BlockingScheduler()
 
 #SLACK_URL = "https://slack.com/api/chat.postMessage"
 HEADER = {
-        "Authorization": "Bearer xoxp-120107970803-391446038516-421206825986-d1b6b3b474bdcaf2762833221a3c899d"
+        "Authorization": ""
 }
 BIRTHS = {
     "Murilo": "8/15/1999",
@@ -18,7 +19,7 @@ BIRTHS = {
 
 def formatMessage(nome):
     message = {
-        "channel": "UBHD414F6",
+        "channel": "",
         "text": "FELIZ ANIVERSÁRIO, {}!!!".format(nome)
     }
 
